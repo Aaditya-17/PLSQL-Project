@@ -1,4 +1,4 @@
-//Medicines 
+--Medicines 
 CREATE TABLE Medicines (
     MedicineID INT PRIMARY KEY,
     MedicineName VARCHAR2(100) NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE Medicines (
     CreatedDate DATE DEFAULT SYSDATE
 );
 
-//Suppliers
+--Suppliers
 CREATE TABLE Suppliers (
     SupplierID INT PRIMARY KEY,
     SupplierName VARCHAR2(100) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE Suppliers (
     Address VARCHAR2(200)
 );
 
-//Stock
+--Stock
 CREATE TABLE Stock (
     StockID INT PRIMARY KEY, 
     MedicineID INT NOT NULL, 
@@ -29,7 +29,7 @@ CREATE TABLE Stock (
         ON DELETE SET NULL 
 );
 
-//Sales
+--Sales
 CREATE TABLE Sales (
     SaleID INT PRIMARY KEY,
     MedicineID INT NOT NULL,
