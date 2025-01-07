@@ -95,7 +95,7 @@ WHERE
     s.Quantity < 20 OR s.ExpiryDate < SYSDATE + 30;
 
 
-//Trigger to Automatically Update Inventory After Sales
+--Trigger to Automatically Update Inventory After Sales
 
 CREATE OR REPLACE TRIGGER trg_update_inventory
 AFTER INSERT ON Sales
@@ -121,7 +121,7 @@ BEGIN
 END;
 /
 
-//Check Updated Stock Levels
+--Check Updated Stock Levels
 SELECT 
     m.MedicineName,
     s.Quantity,
@@ -132,7 +132,7 @@ JOIN
     Medicines m ON s.MedicineID = m.MedicineID;
 
 
-//Monitor Low Stock and Expiry Alerts
+--Monitor Low Stock and Expiry Alerts
 SELECT 
     m.MedicineName,
     s.Quantity,
