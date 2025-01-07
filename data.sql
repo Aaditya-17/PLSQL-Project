@@ -1,4 +1,4 @@
-//Medicines data
+--Medicines data
     INSERT INTO Medicines (MedicineID, MedicineName, Category, UnitPrice, CreatedDate) VALUES (1, 'Paracetamol', 'Pain Relief', 25.50, SYSDATE);
     INSERT INTO Medicines (MedicineID, MedicineName, Category, UnitPrice, CreatedDate) VALUES (2, 'Amoxicillin', 'Antibiotic', 80.00, SYSDATE);
     INSERT INTO Medicines (MedicineID, MedicineName, Category, UnitPrice, CreatedDate) VALUES (3, 'Cetirizine', 'Antihistamine', 15.00, SYSDATE);
@@ -20,14 +20,14 @@
     INSERT INTO Medicines (MedicineID, MedicineName, Category, UnitPrice, CreatedDate) VALUES (19, 'Furosemide', 'Diuretic', 50.00, SYSDATE);
     INSERT INTO Medicines (MedicineID, MedicineName, Category, UnitPrice, CreatedDate) VALUES (20, 'Warfarin', 'Blood Thinner', 65.00, SYSDATE);
 
-//Suppliers data
+--Suppliers data
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactNumber, Address) VALUES (1, 'ABC Pharma', '9876543210', '123 Main Street');
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactNumber, Address) VALUES (2, 'MediSupply Co.', '9876543221', '456 Elm Street');
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactNumber, Address) VALUES (3, 'HealthCorp', '9876543232', '789 Oak Avenue');
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactNumber, Address) VALUES (4, 'Wellness Ltd.', '9876543243', '101 Pine Road');
     INSERT INTO Suppliers (SupplierID, SupplierName, ContactNumber, Address) VALUES (5, 'CareMedics', '9876543254', '333 Birch Lane');
 
-//Stock data
+--Stock data
     INSERT INTO Stock (StockID, MedicineID, SupplierID, Quantity, ExpiryDate, LastUpdated) VALUES (1, 1, 1, 100, TO_DATE('2025-12-31', 'YYYY-MM-DD'), SYSDATE);
     INSERT INTO Stock (StockID, MedicineID, SupplierID, Quantity, ExpiryDate, LastUpdated) VALUES (2, 2, 2, 80, TO_DATE('2025-06-30', 'YYYY-MM-DD'), SYSDATE);
     INSERT INTO Stock (StockID, MedicineID, SupplierID, Quantity, ExpiryDate, LastUpdated) VALUES (3, 3, 3, 200, TO_DATE('2025-03-15', 'YYYY-MM-DD'), SYSDATE);
@@ -51,7 +51,7 @@
 
 
 
-//Sales
+--Sales
     INSERT INTO Sales (SaleID, MedicineID, QuantitySold, SaleDate, TotalAmount) VALUES (1, 1, 10, TO_DATE('2025-01-05', 'YYYY-MM-DD'), 255.00);
     INSERT INTO Sales (SaleID, MedicineID, QuantitySold, SaleDate, TotalAmount) VALUES (2, 2, 5, TO_DATE('2025-01-06', 'YYYY-MM-DD'), 400.00);
     INSERT INTO Sales (SaleID, MedicineID, QuantitySold, SaleDate, TotalAmount) VALUES (3, 3, 15, TO_DATE('2025-01-06', 'YYYY-MM-DD'), 225.00);
