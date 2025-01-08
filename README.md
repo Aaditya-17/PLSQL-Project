@@ -11,7 +11,7 @@ Under the guidance of Sir Aniruddh Gaikwad
 
 ## Project Description
 
-The **Medical Inventory Management System** is an advanced, comprehensive database solution designed to efficiently manage medical supplies, stock levels, supplier information, and sales transactions. This system empowers users to track various medicines in the inventory, monitor stock availability, handle procurement, and manage sales data seamlessly.
+The **Medical Inventory Management System** is an advanced, comprehensive database solution designed to efficiently manage medical supplies, stock levels, supplier information, and sales transactions. This system empowers users to track various medicines in the inventory, monitor stock availability and manage sales data seamlessly.
 
 With the help of advanced PL/SQL features such as foreign key relationships, triggers, and procedural logic, this system ensures data consistency and integrity across all tables. By automating stock updates after sales, the system guarantees that inventory records are always current. Furthermore, the system includes real-time alerts for low stock levels and medicines nearing expiry, which reduces the risk of stockouts and wastage.
 
